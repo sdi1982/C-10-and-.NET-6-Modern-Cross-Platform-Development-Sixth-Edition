@@ -1,0 +1,9 @@
+#!csharp
+
+double heightInMetres = 1.88;
+Console.WriteLine($"The variable {nameof(heightInMetres)} has the value {heightInMetres}.");
+
+#!csharp
+
+string filePath = @"C:\televisions\sony\bravia.txt";
+Console.WriteLine(filePath);
