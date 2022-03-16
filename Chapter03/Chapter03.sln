@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operators", "Operators\Operators.csproj", "{B28A2301-CE2B-4044-A321-0B883FD0DA24}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooleanOperators", "BooleanOperators\BooleanOperators.csproj", "{176834F0-B765-4E41-B0E5-9E2971617D72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitwiseAndShiftOperators", "BitwiseAndShiftOperators\BitwiseAndShiftOperators.csproj", "{693ECA2B-97B4-465A-95E6-E76993CA09CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{B28A2301-CE2B-4044-A321-0B883FD0DA24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B28A2301-CE2B-4044-A321-0B883FD0DA24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B28A2301-CE2B-4044-A321-0B883FD0DA24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{176834F0-B765-4E41-B0E5-9E2971617D72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{176834F0-B765-4E41-B0E5-9E2971617D72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{176834F0-B765-4E41-B0E5-9E2971617D72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{176834F0-B765-4E41-B0E5-9E2971617D72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{693ECA2B-97B4-465A-95E6-E76993CA09CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{693ECA2B-97B4-465A-95E6-E76993CA09CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{693ECA2B-97B4-465A-95E6-E76993CA09CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{693ECA2B-97B4-465A-95E6-E76993CA09CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
