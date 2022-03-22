@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectionStatements", "Sele
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IterationStatements", "IterationStatements\IterationStatements.csproj", "{D385E91C-D2B8-40C5-B960-F0C5CE252DD9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CastingConverting", "CastingConverting\CastingConverting.csproj", "{DC767CFC-3EDF-4FC0-88AC-4080E65417A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{D385E91C-D2B8-40C5-B960-F0C5CE252DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D385E91C-D2B8-40C5-B960-F0C5CE252DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D385E91C-D2B8-40C5-B960-F0C5CE252DD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC767CFC-3EDF-4FC0-88AC-4080E65417A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC767CFC-3EDF-4FC0-88AC-4080E65417A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC767CFC-3EDF-4FC0-88AC-4080E65417A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC767CFC-3EDF-4FC0-88AC-4080E65417A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
