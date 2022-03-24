@@ -20,6 +20,12 @@
 		},
 		{
 			"path": "CastingConverting"
+		},
+		{
+			"path": "HandlingExceptions"
+		},
+		{
+			"path": "CheckingForOverflow"
 		}
 	],
 	"settings": {}
