@@ -6,7 +6,8 @@ using static System.Console;
 // TimeTable(10);
 // decimal taxToPay = CalculateTax(amount: 149, twoLetterRegionCode: "FR");
 // WriteLine($"You must pay {taxToPay:C} in tax.");
-RunCardinalToOrdinal();
+// RunCardinalToOrdinal();
+RunFactorial();
 
 static void TimeTable(byte number)
 {
@@ -68,6 +69,12 @@ static void RunCardinalToOrdinal()
   WriteLine();
 }
 
+/// <summary>
+/// Pass a 32-bit integer and it will be converted int its ordinary equivalent.
+/// </summary>
+/// <param name="number">Number is a cardinal value e.g. 1, 2, 3, and so on.</param>
+/// <returns>Number as an ordinal value e.g. 1st, 2nd, 3rd, and so on.</returns>
+///
 static string CardinalToOrdinal(int number)
 {
   switch (number)
@@ -87,4 +94,36 @@ static string CardinalToOrdinal(int number)
       };
       return $"{number}{suffix}";
   }
+}
+
+// Calculating factorials with recursion
+
+static void RunFactorial()
+{
+  for (int i = 1; i < 15; i++)
+    try
+    {
+      WriteLine($"{i}! = {Factorial(i):N0}");
+    }
+    catch (System.OverflowException)
+    {
+      WriteLine($"{i}! is too big for a 32-bit integer.");
+    }
+}
+
+static int Factorial(int number)
+{
+  if (number < 1)
+  {
+    return 0;
+  }
+  else if (number == 1)
+  {
+    return 1;
+  }
+  else
+    checked
+    {
+      return number * Factorial(number - 1);
+    }
 }
