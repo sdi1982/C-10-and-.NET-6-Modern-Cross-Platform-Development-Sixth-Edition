@@ -2,6 +2,7 @@
 // Console.WriteLine("Hello, World!");
 
 using static System.Console;
+using static System.Array;
 
 // TimeTable(10);
 // decimal taxToPay = CalculateTax(amount: 149, twoLetterRegionCode: "FR");
@@ -9,7 +10,8 @@ using static System.Console;
 // RunCardinalToOrdinal();
 // RunFactorial();
 // RunFibImperative();
-RunFibFunctional();
+// RunFibFunctional();
+RunetIndexOfFirstNonEmptyBin();
 
 static void TimeTable(byte number)
 {
@@ -175,3 +177,23 @@ term switch
   2 => 1,
   _ => FibFunctional(term - 1) + FibFunctional(term - 2)
 };
+
+// Programming C#
+
+static void RunetIndexOfFirstNonEmptyBin()
+{
+  int[] bins = { 0, 0, 3, 4, 5 };
+  WriteLine($"{GetIndexOfFirstNonEmptyBin(bins)}");
+}
+
+static int GetIndexOfFirstNonEmptyBin(int[] bins)
+{
+  // return Array.FindIndex(
+  //   bins,
+  //   delegate (int value) { return value > 0; }
+  // );
+  return Array.FindIndex(
+    bins,
+    value => value > 0
+  );
+}
