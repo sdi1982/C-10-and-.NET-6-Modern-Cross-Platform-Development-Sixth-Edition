@@ -77,5 +77,28 @@ WriteLine(format: "{0} of {1} was created at {2:hh:mm:ss} on a {2:dddd}.",
     gummy.HomePlanet,
     gummy.Instantiated);
 
+bob.WriteToConsole();
+WriteLine(bob.GetOrigin());
 
-    
+(string, int) fruit = bob.GetFruit();
+WriteLine($"{fruit.Item1}, {fruit.Item2} there are.");
+
+var fruitNamed = bob.GetNamedFruit();
+WriteLine($"There are {fruitNamed.Number} {fruitNamed.Name}");
+
+// Inferring tuple names
+var thing1 = ("Neville", 4);
+WriteLine($"{thing1.Item1} has {thing1.Item2} children.");
+var thing2 = (bob.Name, bob.Children.Count);
+WriteLine($"{thing2.Name} has {thing2.Count} children.");
+
+// Deconstructing tuples
+(string fruitName, int fruitNumber) = bob.GetFruit();
+WriteLine($"Deconstructed: {fruitName}, {fruitNumber}");
+
+// Deconstructing types
+// Deconstructing a Person
+var (name1, dob1) = bob;
+WriteLine($"Deconstructed: {name1}, {dob1}");
+var (name2, dob2, fav2) = bob;
+WriteLine($"Deconstructed: {name2}, {dob2}, {fav2}");
