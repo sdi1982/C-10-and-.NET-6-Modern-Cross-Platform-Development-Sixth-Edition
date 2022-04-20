@@ -102,3 +102,29 @@ var (name1, dob1) = bob;
 WriteLine($"Deconstructed: {name1}, {dob1}");
 var (name2, dob2, fav2) = bob;
 WriteLine($"Deconstructed: {name2}, {dob2}, {fav2}");
+
+// Defining and passing parameters to methods
+WriteLine(bob.SayHello());
+WriteLine(bob.SayHello("Emily"));
+
+// Passing optional and named parameters
+WriteLine((bob.OptionalParameters()));
+WriteLine(bob.OptionalParameters("Jump!", 98.5));
+WriteLine(bob.OptionalParameters(number: 52.7, command: "Hide!"));
+WriteLine(bob.OptionalParameters("Poke!", active: false));
+
+// Controlling how parameters are passed
+int a = 10;
+int b = 20;
+int c = 30;
+
+WriteLine($"Before: a = {a}, b = {b}, c = {c}");
+bob.PassingParameters(a, ref b, out c);
+WriteLine($"After: a = {a}, b = {b}, c = {c}");
+
+//Simplified out parameters
+int d = 10;
+int e = 20;
+WriteLine($"Before: d = {d}, e = {e}, f doesn't exist yet!");
+bob.PassingParameters(d, ref e, out int f);
+WriteLine($"After: d = {d}, e = {e}, f = {f}");
