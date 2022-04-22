@@ -128,3 +128,18 @@ int e = 20;
 WriteLine($"Before: d = {d}, e = {e}, f doesn't exist yet!");
 bob.PassingParameters(d, ref e, out int f);
 WriteLine($"After: d = {d}, e = {e}, f = {f}");
+
+// Defining read-only properties
+Person sam = new()
+{
+    Name = "Sam",
+    DateOfBirth = new(1972, 1, 27)
+};
+WriteLine(sam.Origin);
+WriteLine(sam.Greeting);
+WriteLine(sam.Age);
+
+sam.FavoriteIceCream = "Chocalate Fudge";
+WriteLine($"Sam's favorite ice-cream flavor is {sam.FavoriteIceCream}.");
+sam.FavoritePrimaryColor = "White";
+WriteLine($"Sam's favorite primary color is {sam.FavoritePrimaryColor}.");
