@@ -186,4 +186,32 @@ foreach (object passenger in passengers)
         _ => 800M
     };
     WriteLine($"Flight costs {flightCost:C} for {passenger}");
+    
+    // Working with records
+    // Init-only properties
+    ImmutablePerson jeff = new()
+    {
+        FirstName = "Jeff",
+        LastName = "Winger"
+    };
+    // jeff.FirstName = "Geoff";
+    
+    // Understanding records
+    ImmutableVehicle car = new()
+    {
+        Brand = "Mazda MX-5 RF",
+        Color = "Soul Red Crystal Metallic",
+        Wheels = 4
+    };
+    ImmutableVehicle repairedCar = car
+        with
+        {
+            Color = "Polymetal Grey Metallic"
+        };
+    WriteLine($"Orignal car color was {car.Color}");
+    WriteLine($"New car color is {repairedCar.Color}");
+
+    ImmutableAnimal oscar = new("Oscar", "Labrador");
+    var (who, what) = oscar;
+    WriteLine($"{who} is a {what}");
 }
