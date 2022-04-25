@@ -2,6 +2,17 @@
 {
     public partial class Person
     {
+        public Person this[int index]
+        {
+            get
+            {
+                return Children[index];
+            }
+            set
+            {
+                Children[index] = value;
+            }
+        }
         public string Origin
         {
             get { return $"{Name} was born on {HomePlanet}"; }
