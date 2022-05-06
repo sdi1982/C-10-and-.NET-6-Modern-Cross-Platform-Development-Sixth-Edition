@@ -2,7 +2,7 @@
 
 namespace Packt.Shared;
 
-public class Person: object
+public class Person: object, IComparable<Person>
 {
     public string? Name;
     public DateTime DateOfBirth;
@@ -72,5 +72,13 @@ public class Person: object
                 Shout(this, EventArgs.Empty);
             }
         }
+    }
+
+    // Implementing interfaces
+    //// Comparing objects when sorting
+    public int CompareTo(Person? other)
+    {
+        if (Name is null) return 0;
+        return Name.CompareTo(other?.Name);
     }
 }
