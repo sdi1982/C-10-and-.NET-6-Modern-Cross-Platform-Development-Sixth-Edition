@@ -24,4 +24,23 @@ WriteLine(
     arg1: harry.Children[0].Name);
 
 WriteLine($"5! is {Person.Factorial(5)}");
-    
+
+// Raising and handling events
+// Calling methods using delegates
+
+// Person p1 = new();
+// int answer = p1.MethodIWantToCall("Frog");
+// WriteLine($"Answer is {answer}");
+
+static void Harry_Shout(object? sender, EventArgs e)
+{
+    if (sender is null) return;
+    Person p = (Person)sender;
+    WriteLine($"{p.Name} is this angry: {p.AngerLevel}.");
+}
+
+harry.Shout += Harry_Shout;
+harry.Poke();
+harry.Poke();
+harry.Poke();
+harry.Poke();
